@@ -5,8 +5,8 @@ import {
 import { getBpmnJS } from 'bpmn-js/test/helper';
 import { getBusinessObject } from 'bpmn-js/lib/util/ModelUtil';
 import TestContainer from 'mocha-test-container-support';
-import spiffModdleExtension from '../../app/spiffworkflow/moddle/spiffworkflow.json';
-import {getExtensionProperty, getExtensionValue} from '../../app/spiffworkflow/extensions/extensionHelpers';
+import spiffModdleExtension from '../../src/spiffworkflow/moddle/spiffworkflow.json';
+import {getExtensionProperty, getExtensionValue} from '../../src/spiffworkflow/extensions/extensionHelpers';
 import {
   bootstrapPropertiesPanel,
   changeInput,
@@ -16,7 +16,7 @@ import {
   findInput,
   findSelect, pressButton,
 } from './helpers';
-import extensions from '../../app/spiffworkflow/extensions';
+import extensions from '../../src/spiffworkflow/extensions';
 import {query as domQuery} from 'min-dom';
 
 

@@ -21,12 +21,12 @@ import {
   changeInput,
   findDivByClass
 } from './helpers';
-import spiffModdleExtension from '../../app/spiffworkflow/moddle/spiffworkflow.json';
-import messages from '../../app/spiffworkflow/messages';
+import spiffModdleExtension from '../../src/spiffworkflow/moddle/spiffworkflow.json';
+import messages from '../../src/spiffworkflow/messages';
 import { fireEvent } from '@testing-library/preact';
 import { getBpmnJS, inject } from 'bpmn-js/test/helper';
-import { findCorrelationProperties, findMessageModdleElements } from '../../app/spiffworkflow/messages/MessageHelpers';
-import {spiffExtensionOptions} from "../../app/spiffworkflow/extensions/propertiesPanel/SpiffExtensionSelect";
+import { findCorrelationProperties, findMessageModdleElements } from '../../src/spiffworkflow/messages/MessageHelpers';
+import {spiffExtensionOptions} from "../../src/spiffworkflow/extensions/propertiesPanel/SpiffExtensionSelect";
 
 describe('Multiple messages should work', function () {
   const xml = require('./bpmn/two_messages.bpmn').default;

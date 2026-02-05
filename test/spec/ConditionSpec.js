@@ -9,7 +9,7 @@ import {
   changeInput,
   PROPERTIES_PANEL_CONTAINER,
 } from './helpers';
-import conditionsPanel from '../../app/spiffworkflow/conditions';
+import conditionsPanel from '../../src/spiffworkflow/conditions';
 import { BpmnPropertiesPanelModule, BpmnPropertiesProviderModule } from 'bpmn-js-properties-panel';
 import { getBusinessObject } from 'bpmn-js/lib/util/ModelUtil';
 

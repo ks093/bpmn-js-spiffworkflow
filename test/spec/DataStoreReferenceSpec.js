@@ -15,9 +15,9 @@ import {
   getPropertiesPanel,
 } from './helpers';
 
-import spiffModdleExtension from '../../app/spiffworkflow/moddle/spiffworkflow.json';
-import DataStoreReference from '../../app/spiffworkflow/DataStoreReference';
-import DataStoreInterceptor from '../../app/spiffworkflow/DataStoreReference/DataStoreInterceptor';
+import spiffModdleExtension from '../../src/spiffworkflow/moddle/spiffworkflow.json';
+import DataStoreReference from '../../src/spiffworkflow/DataStoreReference';
+import DataStoreInterceptor from '../../src/spiffworkflow/DataStoreReference/DataStoreInterceptor';
 
 const return_datastores = (event) => {
   event.eventBus.fire('spiff.data_stores.returned', {

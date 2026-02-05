@@ -10,8 +10,8 @@ import {
   findEntry,
   findSelect,
 } from './helpers';
-import spiffModdleExtension from '../../app/spiffworkflow/moddle/spiffworkflow.json';
-import DataObject from '../../app/spiffworkflow/DataObject';
+import spiffModdleExtension from '../../src/spiffworkflow/moddle/spiffworkflow.json';
+import DataObject from '../../src/spiffworkflow/DataObject';
 
 describe('Properties Panel for Data Objects', function () {
   const xml = require('./bpmn/data_objects_in_pools.bpmn').default;

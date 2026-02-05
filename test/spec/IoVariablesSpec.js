@@ -2,7 +2,7 @@ import {
   query as domQuery
 } from 'min-dom';
 import { bootstrapPropertiesPanel, CONTAINER, expectSelected, findGroupEntry } from './helpers';
-import inputOutput from '../../app/spiffworkflow/InputOutput';
+import inputOutput from '../../src/spiffworkflow/InputOutput';
 import { BpmnPropertiesPanelModule, BpmnPropertiesProviderModule } from 'bpmn-js-properties-panel';
 import { fireEvent } from '@testing-library/preact';
 

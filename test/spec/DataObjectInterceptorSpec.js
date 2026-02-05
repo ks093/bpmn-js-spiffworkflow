@@ -1,5 +1,5 @@
 import { bootstrapPropertiesPanel } from './helpers';
-import dataObjectInterceptor from '../../app/spiffworkflow/DataObject';
+import dataObjectInterceptor from '../../src/spiffworkflow/DataObject';
 import { BpmnPropertiesPanelModule, BpmnPropertiesProviderModule } from 'bpmn-js-properties-panel';
 import {
   inject,
@@ -8,7 +8,7 @@ import {
   findDataObjects,
   findDataObjectReferenceShapes,
   idToHumanReadableName,
-} from '../../app/spiffworkflow/DataObject/DataObjectHelpers';
+} from '../../src/spiffworkflow/DataObject/DataObjectHelpers';
 
 describe('DataObject Interceptor', function () {
 

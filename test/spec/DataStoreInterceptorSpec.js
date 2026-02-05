@@ -4,7 +4,7 @@ import {
     getBpmnJS,
     inject
 } from 'bpmn-js/test/helper';
-import dataStoreInterceptor from '../../app/spiffworkflow/DataStoreReference';
+import dataStoreInterceptor from '../../src/spiffworkflow/DataStoreReference';
 
 describe('DataStore Interceptor', function () {
 

@@ -3,7 +3,7 @@ import {
   queryAll as domQueryAll
 } from 'min-dom';
 import { bootstrapPropertiesPanel, CONTAINER } from './helpers';
-import inputOutput from '../../app/spiffworkflow/InputOutput';
+import inputOutput from '../../src/spiffworkflow/InputOutput';
 import { BpmnPropertiesPanelModule, BpmnPropertiesProviderModule } from 'bpmn-js-properties-panel';
 
 describe('BPMN Input / Output', function() {

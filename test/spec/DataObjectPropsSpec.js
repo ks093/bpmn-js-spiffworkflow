@@ -16,9 +16,9 @@ import {
   BpmnPropertiesProviderModule
 } from 'bpmn-js-properties-panel';
 
-import spiffModdleExtension from '../../app/spiffworkflow/moddle/spiffworkflow.json';
+import spiffModdleExtension from '../../src/spiffworkflow/moddle/spiffworkflow.json';
 import TestContainer from 'mocha-test-container-support';
-import DataObject from '../../app/spiffworkflow/DataObject';
+import DataObject from '../../src/spiffworkflow/DataObject';
 
 describe('Properties Panel for Data Objects', function () {
   let xml = require('./bpmn/diagram.bpmn').default;

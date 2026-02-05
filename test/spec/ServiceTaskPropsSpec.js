@@ -5,7 +5,7 @@ import {
 import { getBusinessObject } from 'bpmn-js/lib/util/ModelUtil';
 import TestContainer from 'mocha-test-container-support';
 import { getBpmnJS } from 'bpmn-js/test/helper';
-import spiffModdleExtension from '../../app/spiffworkflow/moddle/spiffworkflow.json';
+import spiffModdleExtension from '../../src/spiffworkflow/moddle/spiffworkflow.json';
 import {
   bootstrapPropertiesPanel,
   changeInput,
@@ -14,7 +14,7 @@ import {
   findGroupEntry,
   findInput, findSelect,
 } from './helpers';
-import extensions from '../../app/spiffworkflow/extensions';
+import extensions from '../../src/spiffworkflow/extensions';
 
 describe('Properties Panel for Service Tasks', function () {
   const diagramXml = require('./bpmn/service.bpmn').default;

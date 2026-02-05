@@ -1,12 +1,12 @@
 import { bootstrapPropertiesPanel } from './helpers';
-import dataObjectInterceptor from '../../app/spiffworkflow/DataObject';
+import dataObjectInterceptor from '../../src/spiffworkflow/DataObject';
 import { BpmnPropertiesPanelModule, BpmnPropertiesProviderModule } from 'bpmn-js-properties-panel';
 import {
   inject,
 } from 'bpmn-js/test/helper';
-import { findDataObjects } from '../../app/spiffworkflow/DataObject/DataObjectHelpers';
-import IoInterceptor from '../../app/spiffworkflow/InputOutput/IoInterceptor';
-import InputOutput from '../../app/spiffworkflow/InputOutput';
+import { findDataObjects } from '../../src/spiffworkflow/DataObject/DataObjectHelpers';
+import IoInterceptor from '../../src/spiffworkflow/InputOutput/IoInterceptor';
+import InputOutput from '../../src/spiffworkflow/InputOutput';
 
 describe('Input/Output Interceptor', function() {
 

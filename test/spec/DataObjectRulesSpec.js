@@ -1,6 +1,6 @@
 import { bootstrapPropertiesPanel } from './helpers';
 import { BpmnPropertiesPanelModule, BpmnPropertiesProviderModule } from 'bpmn-js-properties-panel';
-import dataObject from '../../app/spiffworkflow/DataObject';
+import dataObject from '../../src/spiffworkflow/DataObject';
 import { inject } from 'bpmn-js/test/helper';
 
 describe('BPMN Input / Output', function() {

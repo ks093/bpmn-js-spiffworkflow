@@ -16,12 +16,12 @@ import {
   getPropertiesPanel,
   changeInput,
 } from './helpers';
-import spiffModdleExtension from '../../app/spiffworkflow/moddle/spiffworkflow.json';
-import messages from '../../app/spiffworkflow/messages';
+import spiffModdleExtension from '../../src/spiffworkflow/moddle/spiffworkflow.json';
+import messages from '../../src/spiffworkflow/messages';
 import { fireEvent } from '@testing-library/preact';
 import { getBpmnJS, inject } from 'bpmn-js/test/helper';
-import { findCorrelationProperties, findMessageModdleElements } from '../../app/spiffworkflow/messages/MessageHelpers';
-import { SPIFF_ADD_MESSAGE_RETURNED_EVENT } from '../../app/spiffworkflow/constants';
+import { findCorrelationProperties, findMessageModdleElements } from '../../src/spiffworkflow/messages/MessageHelpers';
+import { SPIFF_ADD_MESSAGE_RETURNED_EVENT } from '../../src/spiffworkflow/constants';
 
 
 describe('Messages should work', function () {

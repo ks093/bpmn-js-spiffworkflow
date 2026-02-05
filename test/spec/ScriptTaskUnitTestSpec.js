@@ -11,8 +11,8 @@ import {
   expectSelected,
   findGroupEntry,
 } from './helpers';
-import spiffModdleExtension from '../../app/spiffworkflow/moddle/spiffworkflow.json';
-import callActivity from '../../app/spiffworkflow/callActivity';
+import spiffModdleExtension from '../../src/spiffworkflow/moddle/spiffworkflow.json';
+import callActivity from '../../src/spiffworkflow/callActivity';
 
 describe('Call Activities should work', function () {
   const xml = require('./bpmn/call_activity.bpmn').default;

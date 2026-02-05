@@ -5,7 +5,7 @@ import {
   BpmnPropertiesProviderModule,
 } from 'bpmn-js-properties-panel';
 import { getBusinessObject } from 'bpmn-js/lib/util/ModelUtil';
-import spiffModdleExtension from '../../app/spiffworkflow/moddle/spiffworkflow.json';
+import spiffModdleExtension from '../../src/spiffworkflow/moddle/spiffworkflow.json';
 import {
   bootstrapPropertiesPanel,
   changeInput,
@@ -14,7 +14,7 @@ import {
   findSelect,
   getPropertiesPanel,
 } from './helpers';
-import extensions from '../../app/spiffworkflow/extensions';
+import extensions from '../../src/spiffworkflow/extensions';
 
 describe('Business Rule Properties Panel', function () {
   const xml = require('./bpmn/diagram.bpmn').default;
