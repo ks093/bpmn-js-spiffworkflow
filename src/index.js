@@ -25,5 +25,6 @@ export { default as ErrorPropertiesProvider } from './spiffworkflow/errors/prope
 export { default as EscalationPropertiesProvider } from './spiffworkflow/escalations/propertiesPanel/EscalationPropertiesProvider.js';
 export { default as CallActivityPropertiesProvider } from './spiffworkflow/callActivity/propertiesPanel/CallActivityPropertiesProvider.js';
 export { default as IoPropertiesProvider } from './spiffworkflow/InputOutput/propertiesProvider/IoPropertiesProvider.js';
+export { default as DataInputOutputPropertiesProvider } from './spiffworkflow/InputOutput/propertiesProvider/DataInputOutputPropertiesProvider.js';
 export { default as StandardLoopPropertiesProvider } from './spiffworkflow/loops/StandardLoopPropertiesProvider.js';
 export { default as MultiInstancePropertiesProvider } from './spiffworkflow/loops/MultiInstancePropertiesProvider.js';
