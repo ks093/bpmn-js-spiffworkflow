@@ -62,8 +62,6 @@ export function MessageSelect(props) {
     if (!bpmnMessage) {
       bpmnMessage = createMessage(bpmnFactory, messageId);
       definitions.rootElements.push(bpmnMessage);
-    } else if (bpmnMessage.id !== bpmnMessage.name) {
-      bpmnMessage.id = bpmnMessage.name;
     }
 
     updateElementMessageRef(element, bpmnMessage, moddle, commandStack);
@@ -200,9 +198,24 @@ function findMessageById(definitions, messageId) {
   );
 }
 
+/**
+ * Sanitize a message name into a valid xsd:ID.
+ * xsd:ID must start with a letter or underscore and may only contain
+ * letters, digits, hyphens, underscores, and periods.
+ * Colons are NOT allowed (they are XML namespace separators).
+ */
+function toSafeXmlId(name) {
+  const sanitized = name.replace(/[^a-zA-Z0-9_.-]/g, '_');
+  // Ensure it starts with a letter or underscore
+  if (/^[^a-zA-Z_]/.test(sanitized)) {
+    return `Message_${sanitized}`;
+  }
+  return sanitized;
+}
+
 function createMessage(bpmnFactory, messageId) {
   return bpmnFactory.create('bpmn:Message', {
-    id: messageId,
+    id: toSafeXmlId(messageId),
     name: messageId,
   });
 }
@@ -235,7 +248,7 @@ function updateElementMessageRef(element, bpmnMessage, moddle, commandStack) {
 
 function findMessageObject(messageId) {
   const messageObject = spiffExtensionOptions['spiff.messages']?.find(
-    (msg) => msg.identifier === messageId
+    (msg) => msg.identifier === messageId || msg.identifier === toSafeXmlId(messageId)
   );
 
   if (messageObject) {
